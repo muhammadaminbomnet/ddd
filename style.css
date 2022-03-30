@@ -1,0 +1,71 @@
+body{
+    background-image: linear-gradient(rgba(2, 4, 12, 0.7), rgba(2, 5, 17, 0.7)), url(photo_2022-03-30_20-19-51.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+li a::after{
+    content: '';
+    width: 0%;
+    height: 1px ;
+    display: block;
+    color: red;
+    transition: 0.3s all;
+}
+li:hover ::after{
+    width: 100%;
+    border: 1px solid;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#Home ,#About_Us ,#Portfolio ,#Contact_Us{
+    height: 100vh;
+}
+.justify-content-around .card:hover{
+    box-shadow: 1px 1px 20px rgb(37, 35, 35);
+
+}
+#carouselExampleControls{
+    overflow: hidden;
+    height: 500px;
+}
+@media (max-width:720px){
+    .display-4{
+        font-size: 26px;
+    }
+    .ded{
+        display: block;
+    }
+    #carouselExampleControls{
+        height: 200px;
+    }
+    #Portfolio{
+        margin-top: 500px !important;
+    }
+    #Home{
+        margin-bottom: 100px;
+    }
+    .ded .col-6{
+        width: 100%;
+    }
+    ul{
+        display: none !important;
+    }
+    .bars{
+        display: block !important;
+    }
+}
+@media (max-width:1260px){
+    #carouselExampleControls{
+        height: 300px;
+    }
+    #Portfolio{
+        margin-top: 600px !important;
+    }
+    #Home{
+        margin-bottom: 80px;
+    }
+}
